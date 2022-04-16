@@ -25,7 +25,10 @@ const App = () => {
       <br />
       <div>
         <TextField id="outlined-basic" label="Add note ..." variant="outlined" onChange={(event) => setText(event.target.value)} />
-        <Button variant="outlined" onClick={handleClick}>Add</Button>
+        <Button variant="contained" onClick={handleClick} color="success">
+          Add
+        </Button>
+
 
         <ul> {
           todos.map((todo, index) => <li key={index}>{todo}</li>)
